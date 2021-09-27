@@ -23,7 +23,8 @@ image = gr.inputs.Image(type='pil',image_mode="RGB")
 label = gr.outputs.Label()
 title = 'What type of artist is your child?'
 <<<<<<< HEAD
-description = 'Snap a picture of your child\'s art and find out what ganre is their art!'
+description = 'Is your child more of an impressionist or contemporary art kinda artist? A surrialist maybe? Snap a picture of your child\'s art and find out what genre their art is!'
+
 sample_images = [["ex1.JPG"],['ex2.JPG'],['ex3.JPG'],['ex4.JPG']]
 
 =======
