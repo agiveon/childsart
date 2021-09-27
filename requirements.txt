@@ -1,0 +1,8 @@
+numpy
+opencv-python
+keras
+gradio
+tensorflow
+torch
+torchvision
+requests
