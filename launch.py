@@ -22,6 +22,6 @@ def classify_dino(img):
 image = gr.inputs.Image(type='pil',image_mode="RGB")
 label = gr.outputs.Label()
 title = 'What type of artist is your child?'
-description = 'Snap a picture of your child\'s art and find out what ganre is their art!'
+description = 'Is your child more of an impressionist or contemporary? Surrialist maybe? Snap a picture of your child\'s art and find out what genre is their art!'
 
 gr.Interface(fn=classify_dino, inputs=image, outputs=label, capture_session=True, title=title, description=description).launch(debug=True)
