@@ -24,4 +24,4 @@ label = gr.outputs.Label()
 title = 'What type of artist is your child?'
 description = 'Is your child more of an impressionist or contemporary? Surrialist maybe? Snap a picture of your child\'s art and find out what genre is their art!'
 
-gr.Interface(fn=classify_dino, inputs=image, outputs=label, capture_session=True, title=title, description=description).launch(debug=True)
+gr.Interface(fn=classify_dino, inputs=image, outputs=label, capture_session=True, title=title, description=description).launch(share=True)
