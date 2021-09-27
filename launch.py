@@ -23,5 +23,7 @@ image = gr.inputs.Image(type='pil',image_mode="RGB")
 label = gr.outputs.Label()
 title = 'What type of artist is your child?'
 description = 'Snap a picture of your child\'s art and find out what ganre is their art!'
+sample_images = [["ex1.JPG"],['ex2.JPG'],['ex3.JPG'],['ex4.JPG']]
+
 
 gr.Interface(fn=classify_dino, inputs=image, outputs=label, capture_session=True, title=title, description=description).launch(debug=True)
