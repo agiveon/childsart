@@ -22,13 +22,11 @@ def classify_dino(img):
 image = gr.inputs.Image(type='pil',image_mode="RGB")
 label = gr.outputs.Label()
 title = 'What type of artist is your child?'
-<<<<<<< HEAD
+
 description = 'Is your child more of an impressionist or contemporary art kinda artist? A surrealist maybe? Snap a picture of your child\'s art and find out what genre their art is!'
 
 sample_images = [["ex1.JPG"],['ex2.JPG'],['ex3.JPG'],['ex4.JPG']]
 
-=======
 description = 'Is your child more of an impressionist or contemporary? Surrialist maybe? Snap a picture of your child\'s art and find out what genre is their art!'
->>>>>>> 24d39d2491a99e541f7e9efadb25791f7ec84717
 
-gr.Interface(fn=classify_dino, inputs=image, outputs=label, capture_session=True, title=title, description=description).launch(share=True)
+gr.Interface(fn=classify_dino, inputs=image, outputs=label, capture_session=True, examples=sample_images, title=title, description=description).launch(share=True)
